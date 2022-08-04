@@ -50,4 +50,7 @@ I have used following commands
 `CHMOD` - it is used to change the file permissions
 `ENTRYPOINT` `CMD` - which  it will excute the commands and scripts
 ```
+commands Usage
+`docker build -t <name>` Dockerfile - it will build an image with the sepcified tag name
+`docker run -it -v /<my folder path>:<containerpath>` -d <image> <Arg> /bin/bash 
 ******************************************************************************************************************
