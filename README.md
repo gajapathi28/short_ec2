@@ -30,11 +30,11 @@ During the infrastruture provsioning, what we can achieve:
                                        ## Ansible
 For now i have created some playbooks
 ```
-`playbook.yml`  - which it will execute the to install docker and upgrade GPU this can be included with 2 different roles
+`playbook.yml`  - which it will execute the role to install docker 
 `roles`
   *install_docker/tasks/main.yml*
  ``` 
- excute the commands 
+ commands usage
  `ansible-playbook -i all  playbook.yml`  - it will install docker 
     -for now i am limiting the commands and there is possibility to implement with more args
   ***********************************************************************************************************
