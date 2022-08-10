@@ -1,8 +1,8 @@
 #base os image
 FROM centos:7.5.1804
 #install gcc, libtools,latest release updates
-RUN yum -y install gcc libtool epel-release epel-release \
-    yum clean all
+RUN yum -y install gcc libtool  
+RUN yum clean all
 # install latest package 
 ENV GOLANG_VERSION 1.18.4
 ENV GOLANG_DOWNLOAD_URL https://golang.org/dl/go$GOLANG_VERSION.linux-arm64.tar.gz
@@ -15,4 +15,3 @@ ENV PATH /usr/local/go/bin:$PATH
 COPY ./code/script.sh /
 RUN chmod +x ./script.sh
 ENTRYPOINT ["script.sh"]
-CMD ["go", "cpp"]

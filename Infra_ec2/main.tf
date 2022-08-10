@@ -66,7 +66,7 @@ resource "aws_security_group" "assignment" {
    },
    {
      cidr_blocks      = [ "0.0.0.0/0", ]
-     description      = "ssh"
+     description      = "expose to pulbic"
      from_port        = 36666
      ipv6_cidr_blocks = []
      prefix_list_ids  = []
